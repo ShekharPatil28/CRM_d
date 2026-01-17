@@ -1,0 +1,28 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Create Lead</title>
+</head>
+<body>
+    <h2>Create Lead</h2>
+
+    <form method="post" action="/create-lead">
+        <label>First Name:</label><br>
+        <input type="text" name="first_name"><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="last_name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="phone"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <a href="/leads">View Leads</a>
+</body>
+</html>

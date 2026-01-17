@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leads</title>
+</head>
+<body>
+    <h2>Zoho CRM Leads</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+
+        {% for lead in leads %}
+        <tr>
+            <td>{{ lead.First_Name }} {{ lead.Last_Name }}</td>
+            <td>{{ lead.Email }}</td>
+            <td>{{ lead.Phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">Back to Form</a>
+</body>
+</html>
